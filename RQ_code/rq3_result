@@ -1,0 +1,27 @@
+-------Results for Table5
+	fairness_significant	fairness_significant_large_effect
+fairmutation	0.800000	0.783333
+fairmutation2	0.700000	0.683333
+fairmutation3	0.650000	0.600000
+
+
+-------Results for Table6
+SPD
+	Win	Tie	Lose
+fairmutation2	4	12	4
+fairmutation3	1	2	17
+AOD
+	Win	Tie	Lose
+fairmutation2	4	14	2
+fairmutation3	10	6	4
+EOD
+	Win	Tie	Lose
+fairmutation2	4	14	2
+fairmutation3	11	9	0
+
+
+-------Results for Figure 4
+	Proportion of cases surpassing the Fairea baseline
+fairmutation	0.744500
+fairmutation2	0.693000
+fairmutation3	0.591833

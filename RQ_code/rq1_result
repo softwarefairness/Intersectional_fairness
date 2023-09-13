@@ -1,0 +1,65 @@
+-------Results for Table2
+	fairness_significant	fairness_significant_large_effect
+rew	0.716667	0.683333
+adv	0.316667	0.316667
+eop	0.566667	0.516667
+fairsmote	0.433333	0.383333
+maat	0.733333	0.716667
+fairmask	0.716667	0.683333
+fairmutation	0.800000	0.783333
+rewfairmutation	0.750000	0.750000
+advfairmutation	0.416667	0.416667
+eopfairmutation	0.800000	0.800000
+fairsmotefairmutation	0.483333	0.433333
+maatfairmutation	0.833333	0.800000
+
+
+-------Results for Table3
+spd
+	Win	Tie	Lose
+rew	12	5	3
+adv	13	4	3
+eop	10	7	3
+fairsmote	13	4	3
+maat	8	7	5
+fairmask	14	5	1
+aod
+	Win	Tie	Lose
+rew	9	10	1
+adv	16	4	0
+eop	9	11	0
+fairsmote	11	4	5
+maat	4	12	4
+fairmask	4	12	4
+eod
+	Win	Tie	Lose
+rew	6	14	0
+adv	16	2	2
+eop	10	10	0
+fairsmote	5	11	4
+maat	5	11	4
+fairmask	3	13	4
+
+
+-------Results for Table4
+spd
+	Win	Tie	Lose
+rewfairmutation	8	12	0
+advfairmutation	15	1	4
+eopfairmutation	2	15	3
+fairsmotefairmutation	13	6	1
+maatfairmutation	1	7	12
+aod
+	Win	Tie	Lose
+rewfairmutation	4	16	0
+advfairmutation	16	3	1
+eopfairmutation	2	16	2
+fairsmotefairmutation	9	7	4
+maatfairmutation	1	15	4
+eod
+	Win	Tie	Lose
+rewfairmutation	5	15	0
+advfairmutation	15	3	2
+eopfairmutation	2	16	2
+fairsmotefairmutation	11	6	3
+maatfairmutation	1	15	4
