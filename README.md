@@ -4,9 +4,9 @@ Welcome to visit the homepage of our paper entitled "Improving Intersectional Fa
 
 ## Experimental environment
 
-We use Python 3.7 for our experiments. We use the IBM AI Fairness 360 (AIF360) toolkit for implementing bias mitigation methods and computing fairness metrics. 
+We use Python 3.7 for our experiments. We use the IBM AI Fairness 360 (AIF360) toolkit to implement bias mitigation methods and comput fairness metrics. 
 
-Installation instructions for Python 3.7 and AIF360 can be found on https://github.com/Trusted-AI/AIF360. That page provides several ways for the installation. We recommend creating a virtual environment for it (as shown below), because AIF360 requires specific versions of many Python packages which may conflict with other projects on your system. If you would like to try other installation ways or encounter any errors during the installation proces, please refer to the page (https://github.com/Trusted-AI/AIF360) for help.
+Installation instructions for Python 3.7 and AIF360 can be found at https://github.com/Trusted-AI/AIF360. That page provides several ways for the installation. We recommend creating a virtual environment for it (as shown below), because AIF360 requires specific versions of many Python packages which may conflict with other projects on your system. If you want to try other installation ways or encounter any errors during the installation process, please refer to the page (https://github.com/Trusted-AI/AIF360) for help.
 
 #### Conda
 
@@ -75,11 +75,11 @@ You can refer to https://github.com/Trusted-AI/AIF360/tree/master/aif360/data fo
 
 You can also replicate the results from scratch using the dataset provided above and the following code of each bias mitigation method.
 
-* ```Fair360/``` contain the scripts for implementing four bias mitigation methods: REW, ADV, EOP, and MAAT (https://dl.acm.org/doi/10.1145/3540250.3549093).
+* ```Fair360/``` contains the scripts for implementing four bias mitigation methods: REW, ADV, EOP, and MAAT (https://dl.acm.org/doi/10.1145/3540250.3549093).
 
 * ```Fair-SMOTE/``` contains code for implementing Fair-SMOTE, a bias mitigation method proposed by [Chakraborty et al.](https://doi.org/10.1145/3468264.3468537) at ESEC/FSE 2021.
 
-* ```FairMask/``` contain the scripts for implementing FairMutation, FairMutation2, FairMutation3, and FairMask (a bias mitigation method proposed by [Peng et al.](https://ieeexplore.ieee.org/document/9951398) at IEEE TSE 2023). 
+* ```FairMask/``` contains the scripts for implementing IFMutation, IFMutation2, IFMutation3, and FairMask (a bias mitigation method proposed by [Peng et al.](https://ieeexplore.ieee.org/document/9951398) at IEEE TSE 2023). 
 
 * ```Fairea_multi/``` contains the scripts of the benchmarking tool namely Fairea.
 
