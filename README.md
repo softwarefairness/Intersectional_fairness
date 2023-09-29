@@ -75,11 +75,13 @@ You can refer to https://github.com/Trusted-AI/AIF360/tree/master/aif360/data fo
 
 You can also replicate the results from scratch using the dataset provided above and the following code of each bias mitigation method.
 
+* ```IFMutation/``` contains the scripts for implementing IFMutation, IFMutation2, and IFMutation3. 
+
 * ```Fair360/``` contains the scripts for implementing four bias mitigation methods: REW, ADV, EOP, and MAAT (https://dl.acm.org/doi/10.1145/3540250.3549093).
 
 * ```Fair-SMOTE/``` contains code for implementing Fair-SMOTE, a bias mitigation method proposed by [Chakraborty et al.](https://doi.org/10.1145/3468264.3468537) at ESEC/FSE 2021.
 
-* ```FairMask/``` contains the scripts for implementing IFMutation, IFMutation2, IFMutation3, and FairMask (a bias mitigation method proposed by [Peng et al.](https://ieeexplore.ieee.org/document/9951398) at IEEE TSE 2023). 
+* ```FairMask/``` contains the scripts for implementing FairMask, a bias mitigation method proposed by [Peng et al.](https://ieeexplore.ieee.org/document/9951398) at IEEE TSE 2023. 
 
 * ```Fairea_multi/``` contains the scripts of the benchmarking tool namely Fairea.
 
