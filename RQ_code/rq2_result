@@ -1,0 +1,14 @@
+-------Results for Figure2
+	Proportion of cases surpassing the Fairea baseline
+rew	0.622000
+adv	0.309000
+eop	0.532333
+fairsmote	0.413167
+maat	0.696167
+fairmask	0.723500
+ifmutation	0.744000
+rewifmutation	0.682667
+advifmutation	0.413333
+eopifmutation	0.680167
+fairsmoteifmutation	0.422833
+maatifmutation	0.722167

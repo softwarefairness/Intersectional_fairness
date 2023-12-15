@@ -1,0 +1,19 @@
+-------Results for Table5
+	fairness_significant	fairness_significant_large_effect
+ifmutation	1.000000	1.000000
+ifmutation2	0.166667	0.083333
+
+
+-------Results for Table6
+SPD
+	Win	Tie	Lose
+ifmutation2	4	0	0
+AOD
+	Win	Tie	Lose
+ifmutation2	4	0	0
+EOD
+	Win	Tie	Lose
+ifmutation2	4	0	0
+	Proportion of cases surpassing the Fairea baseline
+ifmutation	0.953333
+ifmutation2	0.405000
