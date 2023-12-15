@@ -79,19 +79,19 @@ You can reproduce all the results based on the intermediate results provided by 
 
 You can also replicate the results from scratch using the dataset provided above and the following code of each bias mitigation method.
 
-* ```IFMutation/``` and ```IFMutation_Three/``` contains the scripts for implementing IFMutation and IFMutation2. 
+* ```IFMutation/``` and ```IFMutation_Three/``` contains the scripts for implementing IFMutation and IFMutation2 for datasets with two protected attributes and three protected attributes in the paper, respectively. 
 
-* ```Fair360/``` and ```Fair360_Three/``` contain the scripts for implementing four bias mitigation methods: REW, ADV, EOP, and MAAT (https://dl.acm.org/doi/10.1145/3540250.3549093).
+* ```Fair360/``` and ```Fair360_Three/``` contain the scripts for implementing four bias mitigation methods: REW, ADV, EOP, and MAAT (https://dl.acm.org/doi/10.1145/3540250.3549093), for datasets with two protected attributes and three protected attributes in the paper, respectively..
 
-* ```Fair-SMOTE/``` and ``Fair-SMOTE_Three/``` contain code for implementing Fair-SMOTE, a bias mitigation method proposed by [Chakraborty et al.](https://doi.org/10.1145/3468264.3468537) at ESEC/FSE 2021.
+* ```Fair-SMOTE/``` and ```Fair-SMOTE_Three/``` contain code for implementing Fair-SMOTE, a bias mitigation method proposed by [Chakraborty et al.](https://doi.org/10.1145/3468264.3468537) at ESEC/FSE 2021, for datasets with two protected attributes and three protected attributes in the paper, respectively..
 
 * ```FairMask/``` contains the scripts for implementing FairMask, a bias mitigation method proposed by [Peng et al.](https://ieeexplore.ieee.org/document/9951398) at IEEE TSE 2023. 
 
-* ```Fairea_multi/``` and ```Fairea_multi_Three/``` contain the scripts of the benchmarking tool namely Fairea.
+* ```Fairea_multi/``` and ```Fairea_multi_Three/``` contain the scripts of the benchmarking tool namely Fairea for datasets with two protected attributes and three protected attributes in the paper, respectively.
 
-* ```Cal_baseline/``` and ``Cal_baseline_Three/``` contain the scripts for generating trade-off baselines using Fairea.
+* ```Cal_baseline/``` and ```Cal_baseline_Three/``` contain the scripts for generating trade-off baselines using Fairea for datasets with two protected attributes and three protected attributes in the paper, respectively.
 
 * ```Fairea_baseline_multi/``` contains the generated baselines.
 
-* ```aif360.zip``` contains the scripts (provided by [Zhang and Sun](https://github.com/zhangmengling/Adaptive_Fairness_Improvement) at ESEC/FSE 2022) of adapting REW, ADV, and EOP to make them applicable to multiple protected attributes.
+* ```aif360.zip``` contains the scripts (provided by [Chen et al.](https://github.com/chenzhenpeng18/ICSE24-Multi-Attribute-Fairness) at ICSE 2024) of adapting REW, ADV, and EOP to make them applicable to multiple protected attributes.
   
