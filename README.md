@@ -69,7 +69,7 @@ You can refer to https://github.com/Trusted-AI/AIF360/tree/master/aif360/data fo
 
 ## Scripts and results
 
-You can reproduce all the results based on the intermediate results provided by us
+You can reproduce all the results based on the intermediate results provided by us.
 
 * ```RQ_code/``` contains the scripts for producing the results for all RQs. You can reproduce all the results based on the intermediate results provided by us by running ```rq1.py```, ```rq2.py```, and ```rq3.py```.
 
