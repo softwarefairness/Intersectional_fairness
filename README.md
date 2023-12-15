@@ -1,10 +1,10 @@
 # Improving Intersectional Fairness of Machine Learning Software via Input Mutation
 
-Welcome to visit the homepage of our paper entitled "Improving Intersectional Fairness of Machine Learning Software via Input Mutation". The homepage contains data, scrips, and intermediate results used in this paper.
+Welcome to visit the homepage of our paper entitled "IFMutation: Improving Intersectional Fairness of Machine Learning Software via Input Mutation". The homepage contains data, scrips, and intermediate results used in this paper.
 
 ## Experimental environment
 
-We use Python 3.7 for our experiments. We use the IBM AI Fairness 360 (AIF360) toolkit to implement bias mitigation methods and comput fairness metrics. 
+We use Python 3.7 for our experiments. We use the IBM AI Fairness 360 (AIF360) toolkit to implement bias mitigation methods and compute fairness metrics. 
 
 Installation instructions for Python 3.7 and AIF360 can be found at https://github.com/Trusted-AI/AIF360. That page provides several ways for the installation. We recommend creating a virtual environment for it (as shown below), because AIF360 requires specific versions of many Python packages which may conflict with other projects on your system. If you want to try other installation ways or encounter any errors during the installation process, please refer to the page (https://github.com/Trusted-AI/AIF360) for help.
 
@@ -71,21 +71,23 @@ You can refer to https://github.com/Trusted-AI/AIF360/tree/master/aif360/data fo
 
 * ```RQ_code/``` contains the scripts for producing the results for all RQs. You can reproduce all the results based on the intermediate results provided by us by running ```rq1.py```, ```rq2.py```, and ```rq3.py```.
 
-* ```Results/``` contains the raw results of applying each bias mitigation method. Each file in this folder has 21 columns, with the first column indicating the metric, and the next 20 columns the metric values of 20 runs.
+* ```Results/``` contains the raw results of applying each bias mitigation method to datasets with two protected attributes. Each file in this folder has 21 columns, with the first column indicating the metric, and the next 20 columns the metric values of 20 runs.
+
+*  ```Results_Three/``` contains the raw results of applying each bias mitigation method to datasets with three protected attributes. Each file in this folder has 21 columns, with the first column indicating the metric, and the next 20 columns the metric values of 20 runs.
 
 You can also replicate the results from scratch using the dataset provided above and the following code of each bias mitigation method.
 
-* ```IFMutation/``` contains the scripts for implementing IFMutation, IFMutation2, and IFMutation3. 
+* ```IFMutation/``` and ```IFMutation_Three/``` contains the scripts for implementing IFMutation and IFMutation2. 
 
-* ```Fair360/``` contains the scripts for implementing four bias mitigation methods: REW, ADV, EOP, and MAAT (https://dl.acm.org/doi/10.1145/3540250.3549093).
+* ```Fair360/``` and ```Fair360_Three/``` contain the scripts for implementing four bias mitigation methods: REW, ADV, EOP, and MAAT (https://dl.acm.org/doi/10.1145/3540250.3549093).
 
-* ```Fair-SMOTE/``` contains code for implementing Fair-SMOTE, a bias mitigation method proposed by [Chakraborty et al.](https://doi.org/10.1145/3468264.3468537) at ESEC/FSE 2021.
+* ```Fair-SMOTE/``` and ``Fair-SMOTE_Three/``` contain code for implementing Fair-SMOTE, a bias mitigation method proposed by [Chakraborty et al.](https://doi.org/10.1145/3468264.3468537) at ESEC/FSE 2021.
 
 * ```FairMask/``` contains the scripts for implementing FairMask, a bias mitigation method proposed by [Peng et al.](https://ieeexplore.ieee.org/document/9951398) at IEEE TSE 2023. 
 
-* ```Fairea_multi/``` contains the scripts of the benchmarking tool namely Fairea.
+* ```Fairea_multi/``` and ```Fairea_multi_Three/``` contain the scripts of the benchmarking tool namely Fairea.
 
-* ```Cal_baseline/``` contains the scripts for generating trade-off baselines using Fairea.
+* ```Cal_baseline/``` and ``Cal_baseline_Three/``` contain the scripts for generating trade-off baselines using Fairea.
 
 * ```Fairea_baseline_multi/``` contains the generated baselines.
 
