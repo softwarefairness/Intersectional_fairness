@@ -1,11 +1,12 @@
 import pandas as pd
 import numpy as np
+from aif360.datasets import GermanDataset
 
 dataset_orig = pd.read_csv('adult.csv')
 dataset_orig = dataset_orig.dropna()
 dataset_orig = dataset_orig.drop(['workclass','fnlwgt','education','marital-status','occupation','relationship','native-country'],axis=1)
-dataset_orig['sex'] = np.where(dataset_orig['sex'] == ' Male', 1, 0)
-dataset_orig['race'] = np.where(dataset_orig['race'] != ' White', 0, 1)
+dataset_orig['sex'] = np.where(dataset_orig['sex'] == 'Male', 1, 0)
+dataset_orig['race'] = np.where(dataset_orig['race'] != 'White', 0, 1)
 dataset_orig['Probability'] = np.where(dataset_orig['Probability'] == ' <=50K', 0, 1)
 dataset_orig['age'] = np.where(dataset_orig['age'] >= 70, 70, dataset_orig['age'])
 dataset_orig['age'] = np.where((dataset_orig['age'] >= 60 ) & (dataset_orig['age'] < 70), 60, dataset_orig['age'])
@@ -32,7 +33,10 @@ dataset_orig.rename(index=str, columns={"age_cat": "age"}, inplace=True)
 dataset_orig['Probability'] = np.where(dataset_orig['Probability'] == 0, 1, 0)
 dataset_orig.to_csv('compas_new_processed.csv',index=False)
 
-
+dataset_orig = GermanDataset().convert_to_dataframe()[0]
+dataset_orig['credit'] = np.where(dataset_orig['credit'] == 1, 1, 0)
+dataset_orig.columns = dataset_orig.columns.str.replace("credit", "Probability")
+dataset_orig.to_csv('german_processed.csv',index=False)
 
 dataset_orig = pd.read_csv("default.csv")
 dataset_orig = dataset_orig.dropna()
