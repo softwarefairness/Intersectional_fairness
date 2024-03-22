@@ -14,7 +14,7 @@ session = tf.Session(config=config)
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-d", "--dataset", type=str, required=True,
-                    choices = ['adult', 'default', 'mep1', 'mep2'], help="Dataset name")
+                    choices = ['adult', 'default', 'mep1', 'mep2','german'], help="Dataset name")
 parser.add_argument("-c", "--clf", type=str, required=True,
                     choices = ['dl'], help="Classifier name")
 
@@ -22,7 +22,7 @@ args = parser.parse_args()
 dataset_used = args.dataset
 clf_name = args.clf
 
-attr_dict = {"adult":["sex","race"], "default":["sex","age"], "mep1":["sex","race"],"mep2":["sex","race"]}
+attr_dict = {"adult":["sex","race"], "default":["sex","age"], "mep1":["sex","race"],"mep2":["sex","race"],'german': ['sex','age']}
 
 degrees = [0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1]
 dataset_orig, mutation_strategies = get_data(dataset_used)
@@ -35,7 +35,7 @@ fair_list = ['spd', 'aod','eod']
 
 res_forplot = {}
 index = '0'
-if dataset_used == 'compas' or dataset_used == 'german':
+if dataset_used == 'german':
     index = '1'
 for i in range(len(per_list)):
     res_forplot[per_list[i]]= {}
