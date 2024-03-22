@@ -79,7 +79,7 @@ You can reproduce all the results based on the intermediate results provided by 
 
 You can also replicate the results from scratch using the datasets provided above and the following code of each bias mitigation method.
 
-* ```Ensemble/``` and ```Ensemble_Three/``` contain the scripts for implementing FairHOME for datasets with two protected attributes and three protected attributes in the paper, respectively. 
+* ```Ensemble/``` and ```Ensemble_Three/``` contain the scripts for implementing FairHOME and its variants for datasets with two protected attributes and three protected attributes in the paper, respectively. 
 
 * ```Fair360/``` and ```Fair360_Three/``` contain the scripts for implementing four bias mitigation methods: REW, ADV, EOP, and MAAT (https://dl.acm.org/doi/10.1145/3540250.3549093), for datasets with two protected attributes and three protected attributes in the paper, respectively.
 
