@@ -1,14 +1,36 @@
--------Results for Figure2
-	Proportion of cases surpassing the Fairea baseline
-rew	0.622000
-adv	0.309000
-eop	0.532333
-fairsmote	0.413167
-maat	0.696167
-fairmask	0.723500
-ifmutation	0.744000
-rewifmutation	0.682667
-advifmutation	0.413333
-eopifmutation	0.680167
-fairsmoteifmutation	0.422833
-maatifmutation	0.722167
+-------Results for TableIV
+	spdabsc	spdrelac	aodabsc	aodrelac	eodabsc	eodrelac
+rew	-0.023	-12.0%	-0.027	-15.6%	-0.027	-13.6%
+adv	0.022	11.3%	0.054	30.6%	0.061	30.7%
+eop	-0.040	-20.5%	-0.036	-20.3%	-0.036	-17.9%
+fairsmote	-0.025	-13.1%	-0.035	-19.6%	-0.042	-21.1%
+maat	-0.057	-29.4%	-0.054	-30.7%	-0.063	-31.8%
+fairmask	-0.052	-27.1%	-0.067	-38.3%	-0.069	-34.7%
+fairhome	-0.077	-39.7%	-0.082	-46.9%	-0.095	-47.8%
+
+
+-------Results for TableV
+spd
+	Win	Tie	Lose
+rew	20	2	2
+adv	14	9	1
+eop	17	6	1
+fairsmote	15	7	2
+maat	10	9	5
+fairmask	16	7	1
+aod
+	Win	Tie	Lose
+rew	13	9	2
+adv	24	0	0
+eop	17	7	0
+fairsmote	16	5	3
+maat	11	9	4
+fairmask	7	17	0
+eod
+	Win	Tie	Lose
+rew	15	7	2
+adv	24	0	0
+eop	17	7	0
+fairsmote	12	12	0
+maat	13	8	3
+fairmask	9	15	0

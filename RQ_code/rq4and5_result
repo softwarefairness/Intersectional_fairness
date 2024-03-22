@@ -1,0 +1,11 @@
+-------Results for TableVI and Table VII
+	spdabsc	spdrelac	aodabsc	aodrelac	eodabsc	eodrelac
+fairhome	-0.077	-39.7%	-0.082	-46.9%	-0.095	-47.8%
+fairhome1	-0.117	-60.8%	-0.079	-44.6%	-0.081	-40.8%
+fairhome2	-0.078	-40.6%	-0.083	-47.0%	-0.090	-45.4%
+fairhome3	-0.078	-40.1%	-0.082	-46.8%	-0.090	-45.2%
+	win-win	good	poor	inverted	lose-lose
+fairhome	0.298194	0.557778	0.038472	0.068889	0.036667
+fairhome1	0.225833	0.555417	0.078472	0.074306	0.065972
+fairhome2	0.319583	0.537500	0.035278	0.066944	0.040694
+fairhome3	0.315556	0.536528	0.034722	0.070417	0.042778

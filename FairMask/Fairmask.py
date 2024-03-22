@@ -33,7 +33,7 @@ def reg2clf(protected_pred,threshold=.5):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-d", "--dataset", type=str, required=True,
-                        choices=['adult', 'default', 'mep1', 'mep2'], help="Dataset name")
+                        choices=['adult', 'default', 'mep1', 'mep2','german'], help="Dataset name")
     parser.add_argument("-c", "--clf", type=str, required=True,
                         choices=['rf', 'svm', 'lr'], help="Classifier name")
 
@@ -41,7 +41,7 @@ if __name__ == "__main__":
     dataset_used = args.dataset
     clf_name = args.clf
 
-    macro_var = {'adult': ['sex','race'], 'default':['sex','age'], 'mep1': ['sex','race'], 'mep2': ['sex','race']}
+    macro_var = {'adult': ['sex','race'], 'default':['sex','age'], 'mep1': ['sex','race'], 'mep2': ['sex','race'],'german': ['sex','age']}
 
     multi_attr = macro_var[dataset_used]
 
