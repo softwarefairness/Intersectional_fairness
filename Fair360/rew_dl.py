@@ -20,7 +20,7 @@ session = tf.Session(config=config)
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-d", "--dataset", type=str, required=True,
-                    choices = ['adult', 'default', 'mep1', 'mep2'], help="Dataset name")
+                    choices = ['adult', 'default', 'mep1', 'mep2','german','bank'], help="Dataset name")
 parser.add_argument("-c", "--clf", type=str, required=True,
                     choices = ['dl'], help="Classifier name")
 
@@ -30,7 +30,7 @@ scaler = MinMaxScaler()
 dataset_used = args.dataset
 clf_name = args.clf
 
-macro_var = {'adult': ['sex','race'], 'default':['sex','age'], 'mep1': ['sex','race'],'mep2': ['sex','race']}
+macro_var = {'adult': ['sex','race'], 'default':['sex','age'], 'mep1': ['sex','race'],'mep2': ['sex','race'],'german': ['sex','age']}
 
 val_name = "rew_{}_{}_multi.txt".format(clf_name,dataset_used)
 fout = open(val_name, 'w')
