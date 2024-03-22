@@ -1,6 +1,6 @@
-# Improving Intersectional Fairness of Machine Learning Software via Input Mutation
+# Diversity Drives Fairness: Ensemble of Higher Order Mutants for Intersectional Fairness of Machine Learning Software
 
-Welcome to visit the homepage of our paper entitled "IFMutation: Improving Intersectional Fairness of Machine Learning Software via Input Mutation". The homepage contains data, scrips, and intermediate results used in this paper.
+Welcome to the homepage of our paper "Diversity Drives Fairness: Ensemble of Higher Order Mutants for Intersectional Fairness of Machine Learning Software". The homepage contains data, scrips, and intermediate results used in this paper.
 
 ## Experimental environment
 
@@ -64,26 +64,26 @@ pip install fairlearn
 
 ## Dataset
 
-You can refer to https://github.com/Trusted-AI/AIF360/tree/master/aif360/data for the raw data files. We use the data processing scripts provided by [previous work](https://ieeexplore.ieee.org/document/9951398) to process the datasets. We have included the datasets and data processing scripts in the ```Dataset``` folder.
+You can refer to https://github.com/Trusted-AI/AIF360/tree/master/aif360/data for the raw data files. We use the data processing scripts provided by [previous work](https://ieeexplore.ieee.org/document/9951398) to process the datasets. We have included the data processing scripts and processed datasets in the ```Dataset``` folder.
 
 
 ## Scripts and results
 
 You can reproduce all the results based on the intermediate results provided by us.
 
-* ```RQ_code/``` contains the scripts for producing the results for all RQs. You can reproduce all the results based on the intermediate results provided by us by running ```rq1.py```, ```rq2.py```, and ```rq3.py```.
+* ```RQ_code/``` contains the scripts for producing the results for all RQs. You can reproduce all the results based on the intermediate results provided by us by running ```rq1.py```, ```rq2.py```, ```rq3.py```, and ```rq45.py```.
 
 * ```Results/``` contains the raw results of applying each bias mitigation method to datasets with two protected attributes. Each file in this folder has 21 columns, with the first column indicating the metric, and the next 20 columns the metric values of 20 runs.
 
 *  ```Results_Three/``` contains the raw results of applying each bias mitigation method to datasets with three protected attributes. Each file in this folder has 21 columns, with the first column indicating the metric, and the next 20 columns the metric values of 20 runs.
 
-You can also replicate the results from scratch using the dataset provided above and the following code of each bias mitigation method.
+You can also replicate the results from scratch using the datasets provided above and the following code of each bias mitigation method.
 
-* ```IFMutation/``` and ```IFMutation_Three/``` contains the scripts for implementing IFMutation and IFMutation2 for datasets with two protected attributes and three protected attributes in the paper, respectively. 
+* ```Ensemble/``` and ```Ensemble_Three/``` contain the scripts for implementing FairHOME for datasets with two protected attributes and three protected attributes in the paper, respectively. 
 
-* ```Fair360/``` and ```Fair360_Three/``` contain the scripts for implementing four bias mitigation methods: REW, ADV, EOP, and MAAT (https://dl.acm.org/doi/10.1145/3540250.3549093), for datasets with two protected attributes and three protected attributes in the paper, respectively..
+* ```Fair360/``` and ```Fair360_Three/``` contain the scripts for implementing four bias mitigation methods: REW, ADV, EOP, and MAAT (https://dl.acm.org/doi/10.1145/3540250.3549093), for datasets with two protected attributes and three protected attributes in the paper, respectively.
 
-* ```Fair-SMOTE/``` and ```Fair-SMOTE_Three/``` contain code for implementing Fair-SMOTE, a bias mitigation method proposed by [Chakraborty et al.](https://doi.org/10.1145/3468264.3468537) at ESEC/FSE 2021, for datasets with two protected attributes and three protected attributes in the paper, respectively..
+* ```Fair-SMOTE/``` and ```Fair-SMOTE_Three/``` contain code for implementing Fair-SMOTE, a bias mitigation method proposed by [Chakraborty et al.](https://doi.org/10.1145/3468264.3468537) at ESEC/FSE 2021, for datasets with two protected attributes and three protected attributes in the paper, respectively.
 
 * ```FairMask/``` contains the scripts for implementing FairMask, a bias mitigation method proposed by [Peng et al.](https://ieeexplore.ieee.org/document/9951398) at IEEE TSE 2023. 
 
